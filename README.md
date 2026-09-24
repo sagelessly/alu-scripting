@@ -61,14 +61,3 @@ To start using the scripts, clone this repository:
     ```
     cd regular_expressions
     ```
-### Author
-
-This is a set of scripts developed by Loue Sauveur Christian (lscblack).
-
-### Contribution
-
-You are welcome to add to this by adding scripts to show other patterns that can be matched with a regular expression or improving on the existing ones.
-
-### License
-
-This project is open-source with a license of: MIT License - See the LICENSE file.

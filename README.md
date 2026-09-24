@@ -1,6 +1,6 @@
 **# alu-scripting README**
 
-This repository, named alu-scripting, is a collection of Ruby scripts utilizing regular expressions. Each script focuses on different patterns using the `scan` method to extract specific text from the provided input.
+This is a copy of the scripts for this repository, alu-scripting, using regular expressions in Ruby. These scripts perform different patterns on the input provided using the method `scan` to extract the text from the input.
 
 ### Regular Exp
 
@@ -8,7 +8,7 @@ The scripts are designed to showcase regular expressions in the context of patte
 
 ### Usage
 
-To run these scripts, ensure you have Ruby installed on your system. Execute each script by passing the desired text as a command-line argument.
+These scripts require the use of Ruby to run.
 
 #### Examples:
 
@@ -17,7 +17,7 @@ To run these scripts, ensure you have Ruby installed on your system. Execute eac
    #!/usr/bin/env ruby
    puts ARGV[0].scan(/School/).join
    ```
-   This script scans the input for the word "School" and prints the result.
+   This script looks for a piece of text containing the word "School" and prints out that text.
 
 2. **Second Script:**
    ```ruby
@@ -31,25 +31,25 @@ To run these scripts, ensure you have Ruby installed on your system. Execute eac
    #!/usr/bin/env ruby
    puts ARGV[0].scan(/hb?tn/).join
    ```
-   This script looks for patterns with 'hbt', an optional 'b', and 'tn'.
+   This script is searching for patterns that contain ‘hbt' and optionally ‘b' and ‘tn'.
 
 4. **Fourth Script:**
    ```ruby
    #!/usr/bin/env ruby
    puts ARGV[0].scan(/hbt{1,5}n/).join
    ```
-   Searches for patterns with 'hbt' followed by 1 to 5 't' and ending with 'n'.
+   Pattern search with 'hbt' pattern followed by 1 to 5 't' and ending with 'n'.
 
 5. **Fifth Script:**
    ```ruby
    #!/usr/bin/env ruby
    puts ARGV[0].scan(/hbt*n/).join
    ```
-   This script matches patterns with 'hbt' followed by zero or more 't' and ending with 'n'.
+   This script will match the pattern "hbt" and then one or more 't' and end with the letter 'n'.
 6. **ETC**
 ### Cloning Steps
 
-To clone this repository and start using the scripts:
+To start using the scripts, clone this repository:
 
 1. Open a terminal.
 
@@ -57,18 +57,18 @@ To clone this repository and start using the scripts:
    ```
    git clone https://github.com/lscblack/alu-scripting.git
    ```
-3. Run The Following command open script folder
+4. Navigate to the directory where you have your scripts stored.5. Select the directory you have your scripts in.
     ```
     cd regular_expressions
     ```
 ### Author
 
-This collection of scripts was created by **lscblack (Loue Sauveur Christian)**.
+This is a set of scripts developed by Loue Sauveur Christian (lscblack).
 
 ### Contribution
 
-Feel free to contribute by adding more scripts that demonstrate different regular expression patterns or by improving the existing ones.
+You are welcome to add to this by adding scripts to show other patterns that can be matched with a regular expression or improving on the existing ones.
 
 ### License
 
-This project is open-source under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is open-source with a license of: MIT License - See the LICENSE file.

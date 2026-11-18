@@ -9,7 +9,7 @@ def top_ten(subreddit):
     Print OK if the subreddit is invalid.
     """
     if subreddit is None or not isinstance(subreddit, str):
-        print("OK", end="")
+        print("OK")
         return
 
     url = "https://www.reddit.com/r/{}/hot.json?limit=10".format(subreddit)
@@ -18,13 +18,13 @@ def top_ten(subreddit):
     try:
         response = requests.get(url, headers=headers, allow_redirects=False)
         if response.status_code != 200:
-            print("OK", end="")
+            print("OK")
             return
         children = response.json().get("data", {}).get("children", [])
         if not children:
-            print("OK", end="")
+            print("OK")
             return
         for child in children[:10]:
             print(child.get("data", {}).get("title"))
     except Exception:
-        print("OK", end="")
+        print("OK")
